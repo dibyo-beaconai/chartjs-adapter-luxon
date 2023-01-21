@@ -7,9 +7,11 @@
   "type": "module",
   "jsdelivr": "dist/chartjs-adapter-luxon.umd.min.js",
   "unpkg": "dist/chartjs-adapter-luxon.umd.min.js",
-  "main": "dist/chartjs-adapter-luxon.esm.js",
   "exports": {
-    ".": "./dist/chartjs-adapter-luxon.esm.js"
+    ".": {
+      "import": "./dist/chartjs-adapter-luxon.esm.js",
+      "require": "./dist/chartjs-adapter-luxon.umd.js"
+    }
   },
   "repository": {
     "type": "git",
